@@ -9,7 +9,7 @@ public class Main {
         boolean isActived;
 
 
-//        name = "muklis";
+        name = "muklis";
         angka = 2;
         angkaBulat = 3.0;
         isActived = true;
