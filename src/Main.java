@@ -18,7 +18,7 @@ public class Main {
         names[1] = "avi";
         names[2] = "mustofa";
 
-        //deklaration arrays
+        //declaration arrays
         String[] tools = {"ss", "ss"};
 
 
@@ -36,7 +36,7 @@ public class Main {
         }
 
 
-        //java 8 lamba expresion
+        //java 8 lambda expression
 
         List<String> animals = new ArrayList<>();
         animals.add("kanguru");
