@@ -15,11 +15,26 @@ public class Main {
         isActived = true;
 
         System.out.println("PRIMITIVE DATA TYPE"
-                + name+" "
-                + angka+ " "
-                + angkaBulat+ " "
+                + name + " "
+                + angka + " "
+                + angkaBulat + " "
                 + isActived);
 
+
+        //data types object
+        Integer angkaObject;
+        Double angkaBulatObject;
+        Boolean isActiveObject;
+
+
+        angkaObject = 7;
+        angkaBulatObject = 60.0;
+        isActiveObject = Boolean.TRUE;
+
+        System.out.println("Object Data Type:   " +
+                angkaObject + " "
+                + angkaBulatObject + " "
+                + isActiveObject);
 
     }
 }
