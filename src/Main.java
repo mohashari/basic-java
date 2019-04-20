@@ -1,53 +1,29 @@
-import java.util.*;
+import controller.impl.PersegiPanjangPerhitunganImpl;
+import view.PersegiPanjangView;
+
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        String name;
-        String age;
-
-        Users users = new Users();
-
         Scanner scanner = new Scanner(System.in);
+        PersegiPanjangView view = new PersegiPanjangView();
+        PersegiPanjangPerhitunganImpl perhitungan = new PersegiPanjangPerhitunganImpl();
 
-        System.out.println("MASUKAN NAMA:   ");
-        name = scanner.nextLine();
-        users.setName(name);
+        System.out.println("APLIKASI MENGITUNG PERSEGI PANJANG");
+        System.out.println("MASUKAN PANJANG:    ");
+        view.setPanjang(scanner.nextDouble());
 
-        System.out.println("MASUKAN AGE:    ");
-        age = scanner. nextLine();
-        users.setAge(age);
+        System.out.println("MASUKAN LEBAR:  ");
+        view.setLebar(scanner.nextDouble());
 
-
-        System.out.println("USER INPUT IS " + users.getName() + " " + users.getAge());
+        System.out.println("LUAS NYA ADALAH: \n   " + perhitungan.hitungLuas(view));
 
     }
 }
 
 
-class Users {
-
-    private String name;
-    private String age;
-
-
-    public String getName() {
-        return name;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-}
 
 
 
