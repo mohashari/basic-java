@@ -1,36 +1,53 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Admin admin = new Admin();
-        admin.printName("Muklis");
+        String name;
+        String age;
+
+        Users users = new Users();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("MASUKAN NAMA:   ");
+        name = scanner.nextLine();
+        users.setName(name);
+
+        System.out.println("MASUKAN AGE:    ");
+        age = scanner. nextLine();
+        users.setAge(age);
+
+
+        System.out.println("USER INPUT IS " + users.getName() + " " + users.getAge());
+
     }
 }
 
 
-//  class parent
-class Users  {
+class Users {
 
-    String name;
-    String age;
+    private String name;
+    private String age;
 
-    void printName(String name) {
-        System.out.println(name);
+
+    public String getName() {
+        return name;
     }
 
-}
+    public String getAge() {
+        return age;
+    }
 
-//class child
-class Admin extends Users {
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    String role;
-    void getAdmin() {
-        System.out.println("ADMIN");
+    public void setAge(String age) {
+        this.age = age;
     }
 }
+
+
 
